@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_standard_cal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="8">
+
+        <EditText
+            android:id="@+id/editText1"
+            style="@style/TextTheme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:editable="false"
+            android:gravity="end"
+            android:textAlignment="textEnd"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/editText2"
+            style="@style/TextTheme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:editable="false"
+            android:gravity="end"
+            android:textAlignment="textEnd"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+
+            <Button
+                android:id="@+id/num1"
+                style="@style/TextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="1"
+                android:background="@drawable/roundbutton"/>
+
+            <Button
+                android:id="@+id/num2"
+                style="@style/TextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="2"
+                android:background="@drawable/roundbutton"
+                />
+
+            <Button
+                android:id="@+id/num3"
+                style="@style/TextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="3"
+                android:background="@drawable/roundbutton"/>
+
+            <Button
+                android:id="@+id/plus"
+                style="@style/RedTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="+"
+                android:background="@drawable/roundbutton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/num4"
+                style="@style/TextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="4"
+                android:background="@drawable/roundbutton"/>
+
+            <Button
+                android:id="@+id/num5"
+                style="@style/TextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="5"
+                android:background="@drawable/roundbutton"/>
+
+            <Button
+                android:id="@+id/num6"
+                style="@style/TextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="6"
+                android:background="@drawable/roundbutton"/>
+
+            <Button
+                android:id="@+id/minus"
+                style="@style/RedTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="-"
+                android:textSize="20dp"
+                android:background="@drawable/roundbutton"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/num7"
+                style="@style/TextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="7"
+                android:background="@drawable/roundbutton"/>
+
+            <Button
+                android:id="@+id/num8"
+                style="@style/TextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="8"
+                android:background="@drawable/roundbutton"/>
+
+            <Button
+                android:id="@+id/num9"
+                style="@style/TextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="9"
+                android:background="@drawable/roundbutton"/>
+
+
+            <Button
+                android:id="@+id/divide"
+                style="@style/RedTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="@string/divide"
+                android:background="@drawable/roundbutton"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/posneg"
+                style="@style/TextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="@string/posneg"
+                android:background="@drawable/roundbutton"/>
+
+            <Button
+                android:id="@+id/num0"
+                style="@style/TextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="0"
+                android:background="@drawable/roundbutton"/>
+
+            <Button
+                android:id="@+id/dot"
+                style="@style/TextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="."
+                android:background="@drawable/roundbutton"/>
+
+
+            <Button
+                android:id="@+id/multiply"
+                style="@style/RedTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="x"
+                android:background="@drawable/roundbutton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/openBracket"
+                style="@style/TextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="@string/openBracket"
+                android:background="@drawable/roundbutton"/>
+
+            <Button
+                android:id="@+id/closeBracket"
+                style="@style/TextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="@string/closeBracket" android:background="@drawable/roundbutton"/>
+
+            <Button
+                android:id="@+id/square"
+                style="@style/TextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="@string/square" android:background="@drawable/roundbutton"/>
+
+            <Button
+                android:id="@+id/sqrt"
+                style="@style/RedTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="@string/sqrt" android:background="@drawable/roundbutton"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/history"
+                style="@style/RedTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="@string/history"
+                android:background="@drawable/roundbutton"/>
+
+
+            <Button
+                android:id="@+id/clear"
+                style="@style/RedTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="@string/clear" android:background="@drawable/roundbutton"/>
+
+            <Button
+                android:id="@+id/backSpace"
+                style="@style/RedTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="@string/backspace"
+                android:background="@drawable/roundbutton"/>
+
+            <Button
+                android:id="@+id/equal"
+                style="@style/RedTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="="
+                android:background="@drawable/roundbutton"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
