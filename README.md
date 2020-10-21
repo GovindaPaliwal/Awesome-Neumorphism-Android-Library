@@ -20,7 +20,7 @@ Neumorphism is very complicated for a large app but this is my thinking. I am no
 
 ***So, About this Library***
 
-Using this library you can convert your basic views to Neumorphic View using small code. Currently i test only Normal android views like Button, EditText, TextView, ImageView, Slider, Radio Button, Checkbox, Tabs etc.
+Using this library you can convert your basic views to Neumorphic View using small code. Currently i tested this library on only Normal android views like Button, EditText, TextView, ImageView, Slider, Radio Button, Checkbox, Tabs etc.
 
 ## Sample Example App Screens
 <table style="width:100%">
